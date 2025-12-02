@@ -11,7 +11,8 @@ export default function decorate(block) {
     }
     button.setAttribute(attrKey, attrValue);
   });
-  
+
   block.replaceWith(button);
+
   button.parentElement.outerHTML = button.parentElement.innerHTML;
 }
